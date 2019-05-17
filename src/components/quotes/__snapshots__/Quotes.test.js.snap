@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Quotes component renders a Quotes 1`] = `
-<ul>
+<ul
+  className="Quotes"
+>
   <li
     key="0"
   >
@@ -9,7 +11,7 @@ exports[`Quotes component renders a Quotes 1`] = `
       quote={
         Object {
           "character": "Fry",
-          "img": "test",
+          "image": "test",
           "quote": "hello",
         }
       }
@@ -22,7 +24,7 @@ exports[`Quotes component renders a Quotes 1`] = `
       quote={
         Object {
           "character": "Bender",
-          "img": "test2",
+          "image": "test2",
           "quote": "go away",
         }
       }

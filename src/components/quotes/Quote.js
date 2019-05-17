@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Quote({ quote }) {
   return (
     <section>
-      <img src={quote.img}/>
+      <img src={quote.image}/>
       <p>{quote.character}</p>
       <p>{quote.quote}</p>
     </section>

@@ -5,7 +5,7 @@ import Quote from './Quote';
 describe('Quote component', () => {
   it('renders a Quote', () => {
     const quote = {
-      img: 'path/to/image',
+      image: 'path/to/image',
       character: 'Bender',
       quote: 'Bite my shiny metal, ass'
     };
