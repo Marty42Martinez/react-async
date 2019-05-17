@@ -1,15 +1,16 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Quotes from '../../components/quotes/Quotes';
 import Loading from '../../components/Loading';
 import { getQuotes } from '../../services/futuramaApi';
 
-export default class TopQuotes extends PureComponent {
+export default class TopQuotes extends Component {
   static propTypes = {
-    count: PropTypes.number
+    count: PropTypes.number,
+    clicks: PropTypes.number
   }
   static defaultPropTypes = {
-    count: 10
+    count: 5
   }
 
   state = {
@@ -29,7 +30,7 @@ export default class TopQuotes extends PureComponent {
 
   componentDidUpdate(prevProps) {
     //Below prevents infinite loop of updates!
-    if(prevProps.count != this.props.count) {
+    if(prevProps.clicks != this.props.clicks) {
       this.fetchQuotes();
     }
   }

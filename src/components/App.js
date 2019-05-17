@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import TopQuotes from '../containers/quotes/TopQuotes';
 
 export default function App() {
-  const [quotes, updateQuotes] = useState('top');
-
+  const [clicks, updateQuotes] = useState(0);
   return (
     <>
-      <button onClick={() => updateQuotes('top')}>Top Quotes</button>
-      {quotes === 'top' && <TopQuotes />}
+      <button onClick={() => updateQuotes(clicks + 1)}>Top Quotes</button>
+      <TopQuotes clicks={clicks} />
+      {/* {quotes === 'to && <TopQuotes />} */}
     </>
   );
 }
