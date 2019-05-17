@@ -7,6 +7,8 @@ exports[`App component renders an App 1`] = `
   >
     Top Quotes
   </button>
-  <TopQuotes />
+  <TopQuotes
+    clicks={0}
+  />
 </Fragment>
 `;
